@@ -47,26 +47,27 @@ time, mark, audio, video {
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 #bor{
-  background-image: url(back.png);
+  background-image: url(./back.png);
   background-size: cover;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 500px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
+
 .title{
   font-family: sans-serif;
   font-size: 100px;
   font-weight: bold;
   color: #849c8d;
-  position: relative;
-  left: 390px;
-  top: 100px;
+  display: inline;
 
 }
 .btn{
-  position: relative;
-  top: 300px;
-  left: 42%;
 	padding: 20px 30px;
   background: #233863;
 	text-transform: uppercase;
@@ -77,6 +78,7 @@ time, mark, audio, video {
 	text-decoration: none;
 	width: 166px;
 }
+
 .btn:hover{
   color: #233863;
   background: white;
